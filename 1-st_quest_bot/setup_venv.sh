@@ -5,14 +5,14 @@ set -e
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "venv" ]; then
-    python -m venv venv
+    python3 -m venv venv
     echo "Virtual environment created."
 else
     echo "Virtual environment already exists."
 fi
 
 # Activate the virtual environment
-source venv/Scripts/activate
+source venv/bin/activate
 
 # Install requirements
 pip install -r requirements.txt
